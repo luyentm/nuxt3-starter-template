@@ -1,18 +1,153 @@
 <template>
-  <div class="w-full h-full p-5 flex flex-col">
-    <div>
-      <nuxt-link to="/" class="bg-blue-600 px-3 py-1 text-white"
-        >Home</nuxt-link
-      >
+  <div
+    class="w-full h-200 w-full border border-blue-700 rounded-md flex flex-col justify-center items-center"
+  >
+    <div class="flex space-x-3 my-5">
+      <div class="relative group">
+        <div class="bg-white shadow-md px-3 py-1 cursor-pointer">Menu 1</div>
+        <div
+          class="absolute rounded-b-xl overflow-hidden bg-white shadow-md group-hover:(block animate-ddd) flex flex-col animate-dddout"
+        >
+          <div
+            class="bg-white hover:bg-gray-200 min-w-max px-3 cursor-pointer py-1 transition-colors duration-400"
+          >
+            Submenu 1
+          </div>
+          <div
+            class="bg-white hover:bg-gray-200 min-w-max px-3 cursor-pointer py-1 transition-colors duration-400"
+          >
+            Submenu 2
+          </div>
+          <div
+            class="bg-white hover:bg-gray-200 min-w-max px-3 cursor-pointer py-1 transition-colors duration-400"
+          >
+            Submenu 3
+          </div>
+          <div
+            class="bg-white hover:bg-gray-200 min-w-max px-3 cursor-pointer py-1 transition-colors duration-400"
+          >
+            Submenu 4
+          </div>
+        </div>
+      </div>
+      <div class="relative group">
+        <div class="bg-white shadow-md px-3 py-1 cursor-pointer">Menu 1</div>
+        <div
+          class="absolute rounded-b-xl overflow-hidden bg-white shadow-md group-hover:(block animate-ddd) flex flex-col animate-dddout"
+        >
+          <div
+            class="bg-white hover:bg-gray-200 min-w-max px-3 cursor-pointer py-1 transition-colors duration-400"
+          >
+            Submenu 1
+          </div>
+          <div
+            class="bg-white hover:bg-gray-200 min-w-max px-3 cursor-pointer py-1 transition-colors duration-400"
+          >
+            Submenu 2
+          </div>
+          <div
+            class="bg-white hover:bg-gray-200 min-w-max px-3 cursor-pointer py-1 transition-colors duration-400"
+          >
+            Submenu 3
+          </div>
+          <div
+            class="bg-white hover:bg-gray-200 min-w-max px-3 cursor-pointer py-1 transition-colors duration-400"
+          >
+            Submenu 4
+          </div>
+        </div>
+      </div>
+      <div class="relative group">
+        <div class="bg-white shadow-md px-3 py-1 cursor-pointer">Menu 1</div>
+        <div
+          class="absolute rounded-b-xl overflow-hidden bg-white shadow-md group-hover:(block animate-ddd) flex flex-col animate-dddout"
+        >
+          <div
+            class="bg-white hover:bg-gray-200 min-w-max px-3 cursor-pointer py-1 transition-colors duration-400"
+          >
+            Submenu 1
+          </div>
+          <div
+            class="bg-white hover:bg-gray-200 min-w-max px-3 cursor-pointer py-1 transition-colors duration-400"
+          >
+            Submenu 2
+          </div>
+          <div
+            class="bg-white hover:bg-gray-200 min-w-max px-3 cursor-pointer py-1 transition-colors duration-400"
+          >
+            Submenu 3
+          </div>
+          <div
+            class="bg-white hover:bg-gray-200 min-w-max px-3 cursor-pointer py-1 transition-colors duration-400"
+          >
+            Submenu 4
+          </div>
+        </div>
+      </div>
+      <div class="relative group">
+        <div class="bg-white shadow-md px-3 py-1 cursor-pointer">Menu 1</div>
+        <div
+          class="absolute rounded-b-xl overflow-hidden bg-white shadow-md group-hover:(block animate-ddd) flex flex-col animate-dddout"
+        >
+          <div
+            class="bg-white hover:bg-gray-200 min-w-max px-3 cursor-pointer py-1 transition-colors duration-400"
+          >
+            Submenu 1
+          </div>
+          <div
+            class="bg-white hover:bg-gray-200 min-w-max px-3 cursor-pointer py-1 transition-colors duration-400"
+          >
+            Submenu 2
+          </div>
+          <div
+            class="bg-white hover:bg-gray-200 min-w-max px-3 cursor-pointer py-1 transition-colors duration-400"
+          >
+            Submenu 3
+          </div>
+          <div
+            class="bg-white hover:bg-gray-200 min-w-max px-3 cursor-pointer py-1 transition-colors duration-400"
+          >
+            Submenu 4
+          </div>
+        </div>
+      </div>
+      <div class="relative group">
+        <div class="bg-white shadow-md px-3 py-1 cursor-pointer">Menu 1</div>
+        <div
+          class="absolute rounded-b-xl overflow-hidden bg-white shadow-md group-hover:(block animate-ddd) flex flex-col animate-dddout"
+        >
+          <div
+            class="bg-white hover:bg-gray-200 min-w-max px-3 cursor-pointer py-1 transition-colors duration-400"
+          >
+            Submenu 1
+          </div>
+          <div
+            class="bg-white hover:bg-gray-200 min-w-max px-3 cursor-pointer py-1 transition-colors duration-400"
+          >
+            Submenu 2
+          </div>
+          <div
+            class="bg-white hover:bg-gray-200 min-w-max px-3 cursor-pointer py-1 transition-colors duration-400"
+          >
+            Submenu 3
+          </div>
+          <div
+            class="bg-white hover:bg-gray-200 min-w-max px-3 cursor-pointer py-1 transition-colors duration-400"
+          >
+            Submenu 4
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="mt-10">
-      <button @click="add" class="bg-blue-600 px-3 py-1 text-white">add</button>
-      <span class="px-5">
-        {{ counter ? counter.count : "" }}
-      </span>
-    </div>
+    <canvas
+      id="myCanvas"
+      width="500"
+      height="500"
+      style="border: 1px solid #d3d3d3"
+    ></canvas>
   </div>
 </template>
+
 <script>
 import { useCounterStore } from "@/stores/counter";
 export default {
@@ -22,10 +157,23 @@ export default {
       counter,
     };
   },
+  mounted() {
+    this.initdraw();
+  },
   methods: {
     add() {
       console.log("Click");
       this.counter.increment();
+    },
+    initdraw() {
+      var canvas = document.getElementById("myCanvas");
+      var ctx = canvas.getContext("2d");
+      ctx.fillStyle = "#FF0000";
+      ctx.fillRect(0, 0, 100, 20);
+      ctx.font = "80px Comic Sans MS";
+      ctx.fillStyle = "red";
+      ctx.textAlign = "left";
+      ctx.fillText("Hello World", 0, canvas.height / 2);
     },
   },
 };
